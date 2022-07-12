@@ -1,0 +1,9 @@
+4.Realize a function which has 2 arguments and 1 return value. Argument 1 is Byte value, Argument 2 is bit position.
+ Function has to flip the bit position (as per argument 2) in argument 1 byte value and return complete byte value.
+
+
+Algorithm:
+1.Scan the variable
+2.take function with 2 arguments
+3.1st argument take byte value as well as 2nd argument take bit position
+4>toggle the bit and notedown.

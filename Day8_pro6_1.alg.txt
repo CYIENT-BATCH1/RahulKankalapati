@@ -1,0 +1,16 @@
+6.1.Set the register T0CON value such a way that bit TMR0ON and PSA bit are set (1), without disturbing the other bits.
+Algorithm:
+1.Acess & instilize the Registers bits.
+2.TMR0ON and PSA bit are set 1 without disturbing other bits.
+3.By using OR with 1 you have to set above bits 
+4.Note down the result as num bits.
+
+
+
+6.2.Find out the value of T0PS2, T0PS1, T0PS0 bits in T0CON register if the value of the register is 0xF3
+1.Acess & instilize the Registers bits.
+2.TCON registers set to 0xF3
+3.oxF3 register rightshift with how many iterations you want and aftyer that & with one 
+4.Note down  the values of TOPS2,TOPS1,TOPS0 
+
+

@@ -1,0 +1,93 @@
+ 4.Realize a function which has 2 arguments and 1 return value. Argument 1 is Byte value, Argument 2 is bit position.
+ Function has to flip the bit position (as per argument 2) in argument 1 byte value and return complete byte value.
+
+
+Algorithm:
+1.Scan the variable
+2.take function with 2 arguments
+3.1st argument take byte value as well as 2nd argument take bit position
+4>toggle the bit and notedown.
+#include <stdio.h>
+int fun(int arg1,int arg2){
+    arg1=arg1^(1<<arg2);
+    return arg1;
+}
+int main(){
+    printf("%x",fun(0x81,1));//output:83//1000 0001^0000 0010=1000 0011=83
+
+}
+
+
+
+5. Write a program in C to sort an array using Pointer. The sample output must be as below
+//taking 5 variables in array i/p:25,45,89,15,82 o/p:15,25,45,82,89.
+
+Algorithm:
+1.Instilize the  variables
+2.find out size of an array
+3.Compare and sort an array
+4.Take o/p in ascending order
+
+#include<stdio.h>
+
+int main(){
+int arr[]={25,45,89,15,82};
+int n=sizeof arr/sizeof (arr[0]);
+int i,j;
+for(i=0;i<n;i++){
+    for(j=i+1;j<n;j++){
+        if((*(arr+i))>(*(arr+j))){
+            *(arr+i)^=(*(arr+j))^=(*(arr+i))^=(*(arr+j));
+        }
+    }
+}
+
+for(i=0;i<n;i++){
+
+    printf("%d",(*(arr+i)));
+}
+}
+
+
+
+
+
+
+6.1.Set the register T0CON value such a way that bit TMR0ON and PSA bit are set (1), without disturbing the other bits.
+Algorithm:
+1.Acess & instilize the Registers bits.
+2.TMR0ON and PSA bit are set 1 without disturbing other bits.
+3.By using OR with 1 you have to set above bits 
+4.Note down the result as num bits.
+
+#include<stdio.h>
+int main(){
+    int num=0xff;
+    int pos=3;
+    int pos1=7;
+    num=num|(1<<pos)|(1<<pos1);
+    printf("%x",num);
+}
+
+6.2.Find out the value of T0PS2, T0PS1, T0PS0 bits in T0CON register if the value of the register is 0xF3
+1.Acess & instilize the Registers bits.
+2.TCON registers set to 0xF3
+3.oxF3 register rightshift with how many iterations you want and aftyer that & with one 
+4.Note down  the values of TOPS2,TOPS1,TOPS0 
+#include <stdio.h>
+int main()
+{
+   int num=0xf3,r,i;
+   for(i=2;i>=0;i--){
+    r=(n>>i)&1;
+   printf("%x",r);
+   }
+}
+
+
+
+
+
+
+
+
