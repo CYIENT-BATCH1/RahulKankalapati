@@ -1,0 +1,16 @@
+9.Assume that we have a car with 8 seats, and we are monitoring 8 seat belt status in a variable “G_Msg_switchstatus_Byte[]” as shown 
+in pic1. Each switch status is combination of 2 bits as shown in pic2.
+Write status of switches into variable “G_Msg_switchstatus_Byte[]” as below.
+SWITCH1, SWITCH7 status is “faulty type 1 in switch”, SWITCH2, SWITCH5 status is ”switch unbuckle”, SWITCH3, SWITCH6 status is 
+“switch buckle”, SWITCH4, SWITCH0 status is “faulty type 2 in switch” without disturbing the other bits.
+Switch status valueMeaning
+00 Fault type 1 in switch
+01 switch is buckle
+10 switch is unbuckle
+11 Fault type 2 in switch
+Algorithm:
+1)Declare the variables depend on table
+2) You have four different requirements then we are using switch case
+3)Each case having some iterations (for loop) to check register until the first requirement satisfying. 
+4)Repeat the steps for every register and every case.
+5)Take which requirement you want.
