@@ -1,0 +1,11 @@
+3. Write program to clear(0) bits CIS, CM2, CM1, CM0 in register “CMCON” if bits CHS3, CHS2, CHS1, CHS0 bits are set to 0x07
+ in register “ADCON0”
+Image label
+
+Image label
+
+/*Algorithm
+1.scan the registers
+2.convert the registers bytes into binary
+3.iterate the registers
+4.write the o/p.
