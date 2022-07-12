@@ -1,0 +1,9 @@
+14. Find common elements in three sorted arrays, 3 array values are given as input to program.
+
+Algorithm:
+1.To declare the three sorted arrays and find each size of an array
+2.To instilize the variables
+3.Compare the three arrays 
+  -->by using while loop
+  -->By using conditional statements(if elseif .. else)
+4.Find the common numbers in given 3 arrays.
